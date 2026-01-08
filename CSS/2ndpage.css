@@ -2,7 +2,7 @@
     position:absolute;
     left: 9.5%;
     margin-top: -1%; 
-    height: 104vh;
+    height: 102vh;
     width: 80vw;
     object-fit: cover;
     display: block;
@@ -15,4 +15,33 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+}
+.second h1{
+    font-size: 4vw;
+    font-family: "MedievalSharp", cursive;
+    color:white;
+    text-shadow: 4px 4px 8px #000000;
+}
+.second p{
+    font-size: 2vw;
+    font-family: "Tagesschrift", system-ui;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.second button{
+    margin-top: 2vw;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+    font-family: "Tagesschrift", system-ui;
+    border: 2px solid white;
+}
+
+.second button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }

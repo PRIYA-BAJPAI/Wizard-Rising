@@ -15,6 +15,15 @@
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2vw;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover{
+    /* text-decoration: underline; */
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+
 }
 
 #logo{
@@ -39,4 +48,7 @@
     cursor: pointer;
     font-family: "Tagesschrift", system-ui;
     border: 2px solid white;
+}
+#authentication:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }

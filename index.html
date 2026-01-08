@@ -11,10 +11,15 @@
     <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Tagesschrift"> -->
      <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Sekuya&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="img_container">
     <img src="./assets/front.jpg" alt="" id="front" draggable="false"><br>
+    <button id="mute-unmute">♪ Music</button>
+    <audio id="music" autoplay loop preload="auto">
+        <source src="./assets/harry_potter_hedwigs.mp3" type="audio/mpeg">
+    </audio>
     <img src="./assets/logo.png" alt="" id="logo" draggable="false">
     <div class="navbar">
         <a href="#">Home</a>
@@ -31,14 +36,17 @@
     </div>
     <video autoplay muted loop playsinline id="bg-video" src="assets/video.mp4" controls></video>
     <div class="second">
+        
         <h1>Welcome to the World of Magic.</h1>
-        <p>Before starting lets find out</p><br>
-        <p>Whats your Hogwarts House?</p>
-        <img src="./assets/gryffindor.png" alt="">
-        <img src="./assets/hufflepuff.png" alt="">
-        <img src="./assets/ravenclaw.png" alt="">
-        <img src="./assets/slytherin.png" alt=""><br>
+        <p>Before starting lets find out</p>
+        <p>What's your Hogwarts House?</p>
+        <img src="./assets/gryffindor.png" alt="" draggable="false">
+        <img src="./assets/hufflepuff.png" alt="" draggable="false">
+        <img src="./assets/ravenclaw.png" alt="" draggable="false">
+        <img src="./assets/slytherin.png" alt="" draggable="false"><br>
         <button id="house">Let's Find Out</button>
     </div>
+
+    <script src="./java.js"></script>
 </body>
 </html>
