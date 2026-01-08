@@ -20,7 +20,29 @@ body{
     position:absolute;
     top: 80%;
     left: 50%; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);/*used to perfectly center an element*/
     font-size: 5vw;
-    font-family: 'MedievalSharp';
+    font-family: "MedievalSharp", cursive;
+    color: rgb(250, 188, 32);
+    text-shadow: 4px 4px 8px #000000;
+    /* text-decoration: solid underline; */
+    /* font-family: "Sekuya", system-ui; */
 }
+
+/*typewriter effect*/
+.text{
+    overflow: hidden;/*hides text while typing*/
+    white-space: nowrap;/*keeps the text in a single line*/
+    border-right: 4px solid orange;/*creates the cursor*/
+    animation: typing 4s steps(40, end), blink-caret .75s step-end 6;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 22ch } /*to match text length*/
+}
+@keyframes blink-caret {
+    /* from, to { border-color: transparent } */
+    50% { border-color: transparent; }
+}
+

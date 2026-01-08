@@ -1,0 +1,27 @@
+.navbar{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Tagesschrift", system-ui;
+    /* z-index: 10; */
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2vw;
+}
+
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 12%;
+    width: 10vw;
+    height: auto;
+    /* user-select: none; */
+}
