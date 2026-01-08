@@ -1,0 +1,18 @@
+#bg-video{
+    position:absolute;
+    left: 9.5%;
+    margin-top: -1%; 
+    height: 104vh;
+    width: 80vw;
+    object-fit: cover;
+    display: block;
+    pointer-events: none; /* to remove video controls */
+}
+.second{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
