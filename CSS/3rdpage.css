@@ -1,0 +1,56 @@
+#bg3{
+    position: absolute;
+    margin-top: 49%;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+#owl{
+    position: absolute;
+    top: 250%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    /* width: 50vw; */
+
+}
+.about{
+    position: absolute;
+    top: 250%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    text-align: center;
+    color: white;
+}
+.about h1{
+    font-size: 4vw;
+    font-family: "MedievalSharp", cursive;
+    color:white;
+    text-shadow: 4px 4px 8px #000000;
+    text-decoration: underline;
+}
+.about p{
+    font-size: 2vw;
+    font-family: "Tagesschrift", system-ui;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.about button{
+    margin-top: 2vw;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+    font-family: "Tagesschrift", system-ui;
+    border: 2px solid white;
+}
+.about button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
