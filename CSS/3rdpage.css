@@ -1,4 +1,4 @@
-#bg3{
+/* #bg3{
     position: absolute;
     margin-top: 49%;
     width: 100%;
@@ -6,24 +6,32 @@
     margin-left: 5px;
     margin-right: 5px;
     
-}
+} */
+ /* .bg3 .about{
+    /* position: relative; */
+    /* z-index: 1; */
+/* }  */
+/* .bg3 img{
+    position: relative;
+    z-index: 2;
+} */
 #owl{
     position: absolute;
-    top: 250%;
-    right: -10%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    right: 5%;
+    /* transform: translate(-50%, -50%); */
     height: 50vh;
     /* width: 50vw; */
 
 }
 .about{
     position: absolute;
-    top: 250%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    /* left: 35% */
     width: 60vw;
     text-align: center;
     color: white;
+    left: 7%;
 }
 .about h1{
     font-size: 4vw;

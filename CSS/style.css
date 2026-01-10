@@ -1,20 +1,48 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
-    background-color: rgb(46, 74, 68);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
-#front{
-    height: 100vh;
-    width: 80vw;
-    display: block;
-    margin: auto;
+.bg{
+    min-height: 100vh;            /* each bg = one screen */
+    position: relative;
+  background-size: 90% 100%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-color:  rgb(46, 74, 68);
+
 }
+
+.bg1{
+    background-image: url("../assets/front.jpg");
+}
+
+.bg3{
+    background-image: url("../assets/bg3.png");
+}
+
+.bg2 #bg-video{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;       /* fills screen */
+  transform: translate(-50%, -50%);
+  pointer-events: none;    /* disables hover / clicks */
+  z-index: 0;
+}
+
+
 .img_container{
     position: relative;
     text-align: center;
     color: white;
 }   
+
 .text
 {
     position:absolute;
@@ -28,7 +56,6 @@ body{
     /* text-decoration: solid underline; */
     /* font-family: "Sekuya", system-ui; */
 }
-
 /*typewriter effect*/
 .text{
     overflow: hidden;/*hides text while typing*/
@@ -62,4 +89,3 @@ body{
 #mute-unmute:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
-

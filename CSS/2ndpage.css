@@ -1,22 +1,9 @@
-#bg-video{
-    position:absolute;
-    left: 9.5%;
-    margin-top: -1%; 
-    height: 102vh;
-    width: 80vw;
-    object-fit: cover;
-    display: block;
-    pointer-events: none; /* to remove video controls */
-}
-.second{
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+.bg2 .second{
+    position: relative;
+    z-index: 2;
 }
 .second h1{
+    margin: 50px;
     font-size: 4vw;
     font-family: "MedievalSharp", cursive;
     color:white;
