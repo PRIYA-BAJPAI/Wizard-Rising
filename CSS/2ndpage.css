@@ -32,3 +32,17 @@
 .second button:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.houses img{
+    margin: 20px;
+    /* transition: transform 0.3s ease, filter 0.3s ease; */
+}
+
+.houses img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 4px 6px white);
+    filter: brightness(1.2);
+}
+.houses :hover img :not(:hover){
+    filter: brightness(0.8);
+}
