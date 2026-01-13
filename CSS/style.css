@@ -1,54 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
 }
-.bg{
-    min-height: 100vh;            /* each bg = one screen */
+
+.bg {
+    min-height: 100vh;
+    /* each bg = one screen */
     position: relative;
-  background-size: 90% 100%; 
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-color:  rgb(46, 74, 68);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-color: rgb(46, 74, 68);
 
 }
 
-.bg1{
+.bg1 {
     background-image: url("../assets/front.jpg");
 }
 
-.bg3{
+.bg3 {
     background-image: url("../assets/bg3.png");
 }
 
-.bg2 #bg-video{
+.bg2 #bg-video {
     position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: 100%;
-  object-fit: cover;       /* fills screen */
-  transform: translate(-50%, -50%);
-  pointer-events: none;    /* disables hover / clicks */
-  z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    /* fills screen */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* disables hover / clicks */
+    z-index: 0;
 }
 
 
-.img_container{
+.img_container {
     position: relative;
     text-align: center;
     color: white;
-}   
+}
 
-.text
-{
-    position:absolute;
+.text {
+    position: absolute;
     top: 80%;
-    left: 50%; 
-    transform: translate(-50%, -50%);/*used to perfectly center an element*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*used to perfectly center an element*/
     font-size: 5vw;
     font-family: "MedievalSharp", cursive;
     color: rgb(250, 188, 32);
@@ -56,24 +60,40 @@
     /* text-decoration: solid underline; */
     /* font-family: "Sekuya", system-ui; */
 }
+
 /*typewriter effect*/
-.text{
-    overflow: hidden;/*hides text while typing*/
-    white-space: nowrap;/*keeps the text in a single line*/
-    border-right: 4px solid orange;/*creates the cursor*/
+.text {
+    overflow: hidden;
+    /*hides text while typing*/
+    white-space: nowrap;
+    /*keeps the text in a single line*/
+    border-right: 4px solid orange;
+    /*creates the cursor*/
     animation: typing 4s steps(40, end), blink-caret .75s step-end 6;
 
 }
+
 @keyframes typing {
-    from { width: 0 }
-    to { width: 22ch } /*to match text length*/
-}
-@keyframes blink-caret {
-    /* from, to { border-color: transparent } */
-    50% { border-color: transparent; }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 22ch
+    }
+
+    /*to match text length*/
 }
 
-#mute-unmute{
+@keyframes blink-caret {
+
+    /* from, to { border-color: transparent } */
+    50% {
+        border-color: transparent;
+    }
+}
+
+#mute-unmute {
     position: absolute;
     top: 0%;
     right: 10%;
@@ -81,11 +101,49 @@
     font-size: 1vw;
     border: none;
     border-radius: 5px;
-    background-color:  rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     cursor: pointer;
     border: 1px solid white;
 }
-#mute-unmute:hover{
+
+#mute-unmute:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menubtn {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    #mute-unmute {
+        right: 5%;
+    }
+
+    .menubtn {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        /* font-size: 8vw; */
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #444;
+    }
+
+    .navbar a {
+        text-align: center;
+        border-top: 1px solid #555;
+    }
+
+    .navbar.show {
+        /*makes navbar visible again*/
+        display: flex;
+    }
 }

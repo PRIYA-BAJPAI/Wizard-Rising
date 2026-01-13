@@ -25,3 +25,17 @@ btn.addEventListener("click", () => {
     btn.textContent = "♪ Music";
   }
 });
+
+
+//menu icon
+function toggle(event){
+  event.stopPropagation(); //stop click bubbling - The click happens first on the element you clicked.Then it moves upward to its parent.Then to grandparent
+  document.getElementById("nav").classList.toggle("show")
+  document.getElementById("bg").classListtoggle("menu-open")
+  }
+
+document.body.onclick=function(){
+  document.getElementById("nav").classList.remove("show");
+  document.getElementById("bg").classList.remove("menu-open");
+}
+

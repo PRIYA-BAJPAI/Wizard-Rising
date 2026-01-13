@@ -7,7 +7,7 @@
     padding: 10px 20px;
     border-radius: 10px;
     font-family: "Tagesschrift", system-ui;
-    /* z-index: 10; */
+    z-index: 10;
 
 }
 .navbar a{
@@ -28,7 +28,7 @@
 
 #logo{
     position: absolute;
-    top: 0%;
+    top: 1%;
     left: 12%;
     width: 10vw;
     height: auto;
