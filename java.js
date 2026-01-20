@@ -66,7 +66,7 @@ let index = 0;
 const totalSlides = slideItems.length;
 
 function updateSlider() {
-  slides.style.transform = `translateX(-${index * 100}%)`;
+  slides.style.transform = `translateX(-${index * 60}vw )`;
 
   // hide / show buttons
   prevBtn.style.display = index === 0 ? "none" : "block";
